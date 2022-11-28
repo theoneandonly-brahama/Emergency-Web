@@ -1,0 +1,11 @@
+<div class="center2">
+    <a routerLink="/loginP"><button class="button button-01 police" value="police" (click)="onClick('Police')"><img class="img" src="assets/police2.png" alt="" ></button></a>
+</div>
+<div class="center">
+
+    <a routerLink="/loginA"><button class="button button-01 ambulance" value="ambulance" (click)="onClick('Ambulance')"><img class="img" src="assets/ambulance2.png" alt="" ></button> </a>
+
+    <a routerLink="/loginR"><button class="button button-01 remorquer" value="remorquer" (click)="onClick('Remorquer')"><img class="img" src="assets/remorquer2.png" alt="" ></button></a>
+
+</div>
+<app-data [type]="v" [hidden]="true"></app-data>

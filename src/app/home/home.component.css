@@ -1,0 +1,47 @@
+body{
+  background-image: url(/src/assets/savers.jpg);
+}
+  .button{
+    border-radius: 80px;
+    cursor: pointer;
+    height: 160px;
+    width: 160px;
+    border: 0px solid;
+  }
+  .button:after{
+    position: absolute;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+.button-01:hover{
+  color:#457b9d;
+  transform: scale(1.1)
+}
+.img{
+  height: 100px;
+  width: 90px;
+}
+.center {
+  padding: 70px 0;
+  text-align: center;
+  margin: -50px;
+}
+.center2{
+  text-align: center;
+  margin-top: 100px;
+  
+}
+.police{
+  background: #303F9F ;
+  border-color: #303F9F;
+}
+.ambulance{
+  background:  #FF5252;
+  margin-right: 50px;
+  border-color: #FF5252;
+}
+.remorquer{
+  background: #038989;
+  margin-left: 50px;
+  border-color: #038989;
+}

@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="login-form">
+        <div class="login">
+            <h3>Login</h3>
+            
+        </div>
+        <form [formGroup]="form" (submit)="toList()">
+            <input type="text" placeholder="Email" formControlName="mail" autofocus>
+            <input type="password" placeholder="Password" formControlName="mdp">
+            <button class="btn" type="submit">Log in</button>
+        </form>
+        <a routerLink="/registerA"><h6>No account? sign up here</h6></a>
+    </div>
+
+    
+</div>
+<!----
+<video autoplay muted loop >
+    <source src="assets/video2.mp4">
+</video>
+-->

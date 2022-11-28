@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Emergencies <small>Check</small></h2>
+    <ul class="responsive-table">
+        <li class="table-header">
+            <div class="col col-1">Date</div>
+            <div class="col col-5">Longitude </div>
+            <div class="col col-5">Latitude </div>
+
+        </li>
+        <li class="table-row" (click)="openTempDialog()" *ngFor="let al of alerts">
+            <div class="col col-1" data-label="date">{{al.createdAt|date:'dd/MM/YYYY hh:mm'}}</div>
+            <a routerLink="/">
+                <div class="col col-1" data-label="long">{{al.localisation[0]}}</div>
+            </a>
+            <a routerLink="/">
+                <div class="col col-3" data-label="latt">{{al.localisation[1]}}</div>
+            </a>
+        </li>
+
+    </ul>
+    <div class="btn"><button (click)="logout()">Logout</button></div>
+
+</div>

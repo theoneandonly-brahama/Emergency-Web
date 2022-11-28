@@ -1,0 +1,19 @@
+
+
+<div class="container">
+    <div class="login-form">
+        <div class="login">
+            <h3>Register</h3>
+        </div>
+        <form [formGroup]="form" (submit)="toList()">
+            <input type="text" placeholder="nomAgence" formControlName="nomAgence">
+            <input type="text" placeholder="adresse" formControlName="adresse">
+            <input type="text" placeholder="Email" formControlName="mail">
+            <input type="password" placeholder="Password" formControlName="mdp">
+        
+        <button class="btn" type="submit">Sign Up</button>
+        </form>
+    </div>
+
+
+</div>
