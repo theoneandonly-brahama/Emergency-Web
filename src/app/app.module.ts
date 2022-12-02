@@ -19,7 +19,11 @@ import { RegisterpComponent } from './registerp/registerp.component';
 import { RegisterrComponent } from './registerr/registerr.component';
 import { DataPComponent } from './data-p/data-p.component';
 import { DataRComponent } from './data-r/data-r.component';
-
+import { AuthenService } from './services/authen.service';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AdminAmbulanceComponent } from './admin-ambulance/admin-ambulance.component';
+import { AdminPoliceComponent } from './admin-police/admin-police.component';
+import { AdminRemorqueurComponent } from './admin-remorqueur/admin-remorqueur.component';
 
 
 
@@ -39,6 +43,10 @@ import { DataRComponent } from './data-r/data-r.component';
     RegisterrComponent,
     DataPComponent,
     DataRComponent,
+    AdminLoginComponent,
+    AdminAmbulanceComponent,
+    AdminPoliceComponent,
+    AdminRemorqueurComponent,
     
   ],
   imports: [
@@ -51,7 +59,8 @@ import { DataRComponent } from './data-r/data-r.component';
     ReactiveFormsModule
     
   ],
-  providers: [],
+  providers: [AuthenService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

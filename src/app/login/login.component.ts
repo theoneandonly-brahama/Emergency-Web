@@ -23,10 +23,10 @@ export class LoginComponent implements OnInit {
   }
   toList(){
     console.log(this.form.getRawValue())
-    this.http.post('http://localhost:3000/api/ambulance/login',this.form.getRawValue()).subscribe(()=>this.router.navigate(['listes_A']))
+    this.http.post('http://localhost:3000/api/ambulance/login',this.form.getRawValue()).subscribe((data)=>{
+      this.router.navigate(['listes_A'])})
     
-    
-    
+      
   }
   initForm(){
     this.form = this.fb.group({
